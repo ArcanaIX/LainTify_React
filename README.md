@@ -1,8 +1,32 @@
-# React + Vite
+# A Lain Spotify player
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Requirement
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- A premium spotify account
+- A Spotify application, you can create one here : https://developer.spotify.com/dashboard
+
+
+## Setup
+
+Go to your spotify developper dashboard and get your client id key and your client secret key and add it to "/path/to/your/folder/src/scripts/spotify.controller.js" and you'll be good to go
+
+
+## Installation
+
+
+To install dependencies run :
+
+```shell
+npm install
+```
+
+
+To run server on your LAN :
+
+```shell
+npm run dev
+```
+
+
+By default it will run on the port 5173
