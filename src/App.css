@@ -30,7 +30,8 @@
 
 .player .player-trackname-container {
   position: absolute;
-  width: 150px;
+  width: fit-content;
+  width: 240px;
   right: 5px;
   top: 5px;
   color: #FFF;
@@ -50,4 +51,122 @@
   padding-inline: 10px;
   border-top: 2px solid #847879;
   border-left: 2px solid #847879;
+}
+
+.player .player-trackname-container .player-duration-container{
+  width: 100%;
+  height: 30px;
+  background: #A6788D;
+  display: flex;
+  flex-direction: row;
+  padding-inline: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player .player-trackname-container .player-duration-container .player-duration-background {
+  width: 180px;
+  height: 15px;
+  background: #000;
+  padding: 1px;
+}
+
+.player .player-trackname-container .player-duration-container .player-duration-background .player-duration {
+  background: #A6788D;
+  width: 0%;
+  height: 100%;
+}
+
+.player .player-trackname-container .player-duration-container .player-total-duration {
+  width: max-content;
+  padding: 0;
+  margin: 0;
+}
+
+/** SEARCHBAR */
+.searchbar {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.searchbar .searchbar-input {
+  background: #000;
+  border: 2px solid #A6788D;
+  height: 40px;
+  width: 75%;
+  color: white;
+  font-size: 20px;
+  border-radius: 0;
+}
+
+.searchbar .searchbar-input:focus {
+  outline: none;
+}
+
+.searchbar select {
+  background: #000;
+  height: 40px;
+  width: calc(25% - 12px);
+  border: 2px solid #A6788D;
+  color: white;
+  font-size: 20px;
+  border-radius: 0;
+}
+
+.tracklist {
+  color: #A6788D;
+  padding-inline: 5px;
+  max-height: 575px;
+  padding-block: 20px;
+  overflow: auto;
+}
+
+.track-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.decoration {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  object-position: center;
+  filter: saturate(60%) hue-rotate(160deg);
+}
+
+.callback-connection {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  transform: translate(-50%);
+  border: #A6788D 4px double;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-block: 20px;
+  background: #000;
+}
+
+.callback-connection p {
+  font-size: 48px;
+  color: #A6788D;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.callback-connection button {
+  border: #A6788D 1px double;
+  background: #000;
+  color: #A6788D;
+  text-align: center;
+  font-size: 24px;
+  padding-inline: 20px;
+}
+
+.callback-connection.hidden {
+  display: none;
 }
